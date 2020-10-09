@@ -1,0 +1,48 @@
+{
+  "name": "diagram_editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "parcel": "parcel src/html/index.html",
+    "lint": "eslint --fix src",
+    "test": "mocha --require babel-core/register",
+    "test.watch": "mocha --require babel-core/register --watch",
+    "prepush": "npm-run-all -p lint test",
+    "build-demo": "parcel build src/html/index.html -d docs --public-url /diagram-editor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dialog-polyfill": "^0.5.0",
+    "dotenv": "^8.0.0",
+    "hotkeys-js": "^3.7.3",
+    "hyperapp": "^1.2.6",
+    "idb": "^4.0.4",
+    "lit-element": "^2.1.0",
+    "lit-html": "^1.1.0",
+    "purecss": "^1.0.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.3",
+    "parcel": "^1.9.4",
+    "postcss": "^7.0.5",
+    "postcss-import": "^12.0.1",
+    "postcss-modules": "^1.4.1",
+    "prettier": "^1.13.7"
+  }
+}
